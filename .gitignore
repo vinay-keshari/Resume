@@ -55,6 +55,7 @@ coverage.xml
 *.log
 local_settings.py
 db.sqlite3
+__pycache__/
 
 # Flask stuff:
 instance/
@@ -102,3 +103,14 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+cast/cast/__pycache__/settings.cpython-35.pyc
+cast/cast/__pycache__/urls.cpython-35.pyc
+cast/cast/__pycache__/wsgi.cpython-35.pyc
+cast/castapp/__pycache__/admin.cpython-35.pyc
+cast/castapp/__pycache__/models.cpython-35.pyc
+cast/castapp/forms/__pycache__/__init__.cpython-35.pyc
+cast/castapp/forms/__pycache__/login_page_form.cpython-35.pyc
+cast/castapp/forms/__pycache__/registration_form.cpython-35.pyc
+cast/castapp/views/__pycache__/__init__.cpython-35.pyc
+cast/castapp/views/__pycache__/login_view.cpython-35.pyc
+cast/castapp/views/__pycache__/register_view.cpython-35.pyc

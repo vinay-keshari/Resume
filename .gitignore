@@ -54,7 +54,6 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
 
 # Flask stuff:
 instance/
@@ -102,7 +101,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-cast/cast/__pycache__/
-cast/castapp/__pycache__/
-cast/castapp/forms/__pycache__/
-cast/castapp/views/__pycache__/
+cast/cast/__pycache__/*
+cast/castapp/__pycache__/*
+cast/castapp/forms/__pycache__/*
+cast/castapp/views/__pycache__/*
+cast/db.sqlite3

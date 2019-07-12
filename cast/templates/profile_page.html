@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<title>Profile page</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}">
+</head>
+<body>
+    <div class="topnav1">
+        <div class="active profile-pic" href="#home">
+            <img src="{% static 'images/vinay.png' %}" alt="user image" height="60" width="60" style="border-radius: 50%;">
+        </div>
+        <a class="profile-name">{{ profile_data.name }}</a>
+    </div>
+    <div class="nav-left">
+        <a class="active" href="#home">Academics</a>
+        <a class="active" href="#home">Professional</a> 
+        <a class="active" href="#home">Contact</a>
+    </div>
+    <div>
+        <p>
+            <h2>Academics</h2>
+            <h4>High School Details:</h4>
+            {% for key, value in profile_data.academic_data.highschool_details.items %}
+                {% if key != 'is_cgpa' %}
+                <strong> {{ key }} :</strong> {{ value }} <br>
+                {% endif %}
+            {% endfor %}
+        </p>
+        <p>
+            <h4>Intermediate Details:</h4>
+            {% for key, value in profile_data.academic_data.intermediate_details.items %}
+                {% if key != 'is_cgpa' %}
+                {{ key }} : {{ value }} <br>
+                {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+    <script src="{% static 'js/profile.js' %}"></script>
+</body>
+</html>

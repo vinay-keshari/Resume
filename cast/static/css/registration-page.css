@@ -1,0 +1,44 @@
+
+.mystyle {
+  margin-left: 0%;
+  overflow-x: visible;
+  animation: slideIn 1s backwards
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.registration_form form {
+    color: #ffffff;
+    margin-top: 148px;
+    margin-left: 500px;
+    font-style: italic;
+    font-size: x-large;
+    text-align: center;
+  }
+
+
+.register_button{
+    padding: 7px 94px;
+    background-color: #446aa9;
+    font-size: inherit;
+    font-style: italic;
+    border-radius: 44px;
+    color: white;
+    height: 42px !important;
+}
+
+.registration_form input {
+    border: 2px solid #1a1b1d;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    height: 25px;
+  }
+

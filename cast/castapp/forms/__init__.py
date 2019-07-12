@@ -1,0 +1,2 @@
+from .login_page_form import login_page_form
+from .registration_form import registration_form

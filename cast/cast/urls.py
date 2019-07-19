@@ -20,6 +20,7 @@ from castapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', views.login),
-    path('register/', views.register_user, name='registration_link')
+    path('register/', views.register_user, name='registration_link'),
+    path('profile-create/', views.ProfileCreateView, name='profile-create')
 ]
 

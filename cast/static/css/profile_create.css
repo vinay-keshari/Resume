@@ -1,0 +1,81 @@
+.profile-section{
+    color: white;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.form_input input{
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 1%;
+}
+
+.education-section{
+    color: white;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.professional-sec{
+    color: white;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.label_class{
+    color:white;
+    margin-left: -4%;
+}
+
+.row-fix{
+    display: inline-flex;
+    width: 56%;
+    justify-content: space-evenly;
+}
+
+.row-fix1{
+    display: flex;
+    width: 50%;
+    margin-left: 47px;
+}
+
+.row-fix2{
+    display: flex;
+    width: 50%;
+    margin-left: 47px;
+}
+
+.row-fix3{
+    display: flex;
+    width: 50%;
+    margin-left: 47px;
+}
+
+.row-fix4{
+    display: flex;
+    width:  45%;
+    margin-left: 47px;
+}
+
+.row-fix5{
+    display: flex;
+    width: 50%;
+    margin-left: 47px;
+}
+
+.row-fix6{
+    display: flex;
+    width: 50%;
+    margin-left: 47px;
+}
+
+.register_button {
+    font-size: larger;
+    color: white;
+    background: blue;
+    font-style: oblique;
+    margin-left: 21%;
+    margin-top: 2%;
+
+}

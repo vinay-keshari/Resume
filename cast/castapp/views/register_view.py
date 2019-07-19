@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 from django.contrib.auth import get_user_model
 
-from castapp.forms import registration_form
+from castapp.forms import registration_form, ProfileCreateForm
 
 
 def register_user(request):
@@ -18,7 +18,8 @@ def register_user(request):
         try:
             user=get_user_model().objects.create_user(username, password=password, email=email)
             user.save()
-            return HttpResponse('<h1>User created!</h1>')
+            register_form = ProfileCreateForm()
+            return render(request, 'profile_create.html', {'profile_create_form': register_form})
         except:
             return HttpResponse('<h1>Unable to create</h1>')
     if request.method == 'GET':

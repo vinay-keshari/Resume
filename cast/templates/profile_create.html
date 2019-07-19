@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<title>Registration Page</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile_create.css' %}">
+</head>
+<body background="{% static 'images/app_bg.jpg' %}" alt="My image", style='background-size: cover;'>
+    <form action="" method="post" class='form_input'>
+        <div class="profile-section">
+            <h2 class="label_class">Individual Data</h2>
+            <div class='row-fix'>
+                <p>First Name {{ profile_create_form.first_name }}</p>
+                <p>Last Name {{ profile_create_form.last_name }}</p>
+            </div>
+            <div class='row-fix1'>
+                <p>Contact Number {{ profile_create_form.contact_number }}</p>
+                <p>Email {{ profile_create_form.email }}</p>
+            </div>
+            <p style=" width: 20%; margin-left: 47px">Address {{ profile_create_form.location }}</p>
+        </div>
+        <div class='education-section'>
+            <h2 class="label_class">High School Detail</h2>
+            <div class='row-fix2'>
+                <p>School Name {{ profile_create_form.highschool_name }}</p>
+                <p>Marks Obtained {{ profile_create_form.marks1 }}</p>
+            </div>  
+            <p>Marks are in CGPA ? {{ profile_create_form.is_cgpa1 }}</p>
+            <h2 class="label_class">Intermediate Detail</h2>
+            <div class='row-fix3'>
+                <p>School Name {{ profile_create_form.inter_school_name }}</p>
+                <p>Marks Obtained {{ profile_create_form.marks2 }}</p>
+            </div>
+            <p>Marks are in CGPA ? {{ profile_create_form.is_cgpa2 }}</p>
+        </div>
+        <div class='professional-sec'>
+            <h2 class="label_class">Professional Detail</h2>
+            <div class='row-fix4'>
+            <p>Company Name {{ profile_create_form.company_name }}</p>
+            <p>Designation {{ profile_create_form.designation }}</p>
+            </div>
+            <div class='row-fix5'>
+                <p>Date of Joining {{ profile_create_form.join_date }}</p>
+                <p>Last Working Date {{ profile_create_form.last_wd }}</p>
+            </div>
+            <div class='row-fix6'>
+                <p>Certification {{ profile_create_form.certification }}</p>
+                <p>Valid From {{ profile_create_form.valid_from }}</p>
+            </div>
+            <p style=" width: 20%; margin-left: 47px">Valid Till {{ profile_create_form.valid_till }}</p>
+        </div> 
+    <input class=register_button type="submit" value="Create Profile">
+    </form>
+</body>
+</html>

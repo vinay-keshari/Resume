@@ -1,5 +1,4 @@
 from django import forms
-from castapp.models import profile
 
 class registration_form(forms.Form):
     username = forms.CharField(label='Username', max_length=100)

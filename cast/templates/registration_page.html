@@ -5,12 +5,13 @@
 <title>Registration Page</title>
 <link rel="stylesheet" type="text/css" href="{% static 'css/registration-page.css' %}">
 </head>
-<body background="{% static 'images/app_bg.jpg' %}" alt="My image">
+<body background="{% static 'images/app_bg.jpg' %}" alt="My image", style='background-size: cover;'>
     <div class="registration_form">
     <form action="" method="post"  style="width: 300px">
         {% csrf_token %}
         {{ registration_form }}
     <input class=register_button type="submit" value="Register">
+    <a id="register_link" href="{% url 'profile-create' %}">Complete Profile</a>
     </form>
 </div> 
 <script>
